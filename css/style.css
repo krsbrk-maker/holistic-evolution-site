@@ -1,0 +1,214 @@
+/* ==========================
+   Holistic Evolution Styles
+   ========================== */
+
+:root {
+  --primary-color: #2c9c92;      /* sea green */
+  --primary-soft: #e0f4f2;       /* very light sea green */
+  --accent-color: #b58ad6;       /* lavender */
+  --dark-text: #234041;
+  --light-text: #fdfdfd;
+  --section-padding: 4rem;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--dark-text);
+  background-color: #f7faf9;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand img {
+  height: 52px;
+}
+
+/* Hero / Carousel */
+.hero-carousel .carousel-item {
+  min-height: 80vh;
+  color: var(--light-text);
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+
+.hero-heading,
+.hero-subheading {
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-carousel .carousel-item {
+  filter: brightness(1.15);
+}
+
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 1rem;
+}
+
+.hero-heading {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subheading {
+  font-size: 1.1rem;
+  max-width: 640px;
+}
+
+/* Background images for slides */
+.hero-slide-1 {
+  background-image: url("../images/hero1.jpg");
+}
+
+.hero-slide-2 {
+  background-image: url("../images/hero2.jpg");
+}
+
+.hero-slide-3 {
+  background-image: url("../images/hero3.jpg");
+}
+
+
+.hero-carousel .carousel-item {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* CTA buttons */
+.btn-primary-soft {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary-soft:hover {
+  background-color: #227870;
+  border-color: #227870;
+}
+
+.btn-outline-light-soft {
+  border-color: #fdfdfd;
+  color: #fdfdfd;
+}
+
+.btn-outline-light-soft:hover {
+  background-color: #fdfdfd;
+  color: var(--primary-color);
+}
+
+/* Sections */
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section-light {
+  background-color: #ffffff;
+}
+
+.section-soft {
+  background-color: var(--primary-soft);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.section-subheading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #607d7d;
+}
+
+/* Cards */
+.service-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+}
+
+/* Testimonials */
+.testimonial-card {
+  border-radius: 1rem;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+}
+
+.testimonial-name {
+  font-weight: 600;
+}
+
+/* Book a Session form */
+.book-form {
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  background-color: #123735;
+  color: #cfe6e4;
+}
+
+footer a {
+  color: #e3d2ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Utility spacing tweaks */
+.mt-6 {
+  margin-top: 4rem;
+}
+.mb-6 {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero-content {
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero-subheading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
