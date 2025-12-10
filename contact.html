@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Holistic Evolution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/lavender-logo.png" alt="Lavender logo">
+      <span>Holistic Evolution</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNav" aria-controls="mainNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-primary-soft" href="book-session.html">Book a Session</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- CONTACT HERO -->
+<section class="section section-soft">
+  <div class="container text-center">
+    <h1 class="section-heading">Contact</h1>
+    <p class="section-subheading">
+      Reach out with questions, schedule a session, or request a free consultation.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT INFO + FORM -->
+<section class="section section-light">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- LEFT: Contact Information -->
+      <div class="col-lg-5">
+        <div class="p-4 rounded-4 bg-white shadow-sm">
+          <h4 class="mb-3">Get in Touch</h4>
+
+          <p class="mb-1 fw-semibold">Email:</p>
+          <p><a href="mailto:judymariehoffman950@gmail.com">judymariehoffman950@gmail.com</a></p>
+
+          <p class="mb-1 fw-semibold">Phone:</p>
+          <p><a href="tel:4322080245">432-208-0245</a></p>
+
+          <p class="mb-1 fw-semibold">Location:</p>
+          <p>Odessa, Texas</p>
+
+          <hr>
+
+          <p>
+            Marie offers both in-person and remote sessions.
+            <br>Virtual sessions are equally effective and allow you to experience deep transformation from anywhere.
+          </p>
+
+          <p class="fw-semibold mt-4">Business Hours:</p>
+          <ul class="mb-0">
+            <li>By appointment only</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="col-lg-7">
+        <div class="book-form">
+          <h4 class="mb-4">Send a Message</h4>
+
+          <!-- You can connect this form to Formspree later -->
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Your Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Phone (optional)</label>
+              <input type="text" class="form-control" placeholder="Enter your phone number">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="How can Marie assist you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-soft btn-lg w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-soft">
+  <div class="container text-center">
+    <h2 class="section-heading">Ready to Begin?</h2>
+    <p class="section-subheading">
+      Book a free consultation or send a message with any questions.
+    </p>
+    <a href="book-session.html" class="btn btn-primary-soft btn-lg">Book a Free Consultation</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container text-center">
+    <p class="mb-1">&copy; <span id="year"></span> Holistic Evolution. All rights reserved.</p>
+    <p class="mb-0">
+      <a href="contact.html">Contact</a> &bull;
+      <a href="book-session.html">Book a Session</a>
+    </p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
