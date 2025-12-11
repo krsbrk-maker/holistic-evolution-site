@@ -290,6 +290,62 @@ footer a:hover {
   margin-bottom: 1.25rem;
   line-height: 1.7;
 }
+/* ==========================
+   LEARN PAGE – CALMING HERO
+   ========================== */
+
+.learn-hero {
+  position: relative;
+  min-height: 55vh;
+  background-image: url("../images/learn-hero.jpg"); /* Replace with your calm banner image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+}
+
+.learn-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 156, 146, 0.55) 0%,
+    rgba(181, 138, 214, 0.45) 100%
+  );
+}
+
+.learn-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.learn-hero-heading {
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.learn-hero-subheading {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 767.98px) {
+  .learn-hero {
+    min-height: 45vh;
+    background-attachment: scroll;
+  }
+}
+
+
 
 @media (max-width: 767.98px) {
   .hero-content {
@@ -311,5 +367,6 @@ footer a:hover {
     margin-top: 10px;
   }
 }
+
 
 
