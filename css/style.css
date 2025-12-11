@@ -251,6 +251,13 @@ footer a:hover {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
+.about-portrait-card {
+  margin: 0 auto;
+  padding: 1.25rem;
+  max-width: 380px;
+}
+
+
 /* Mobile */
 @media (max-width: 767.98px) {
   .about-hero {
@@ -515,6 +522,7 @@ footer a:hover {
   }
 
  
+
 
 
 
