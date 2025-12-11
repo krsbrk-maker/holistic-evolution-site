@@ -277,6 +277,22 @@ footer a:hover {
   border-radius: 12px;       /* optional: soften corners */
 }
 
+.about-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.about-credentials {
+  font-size: 0.95rem;
+  color: #607d7d;
+  margin-bottom: 0.75rem;
+}
+
+.about-tagline {
+  font-size: 0.9rem;
+  color: #7a9393;
+}
 
 
 /* Mobile */
@@ -543,6 +559,7 @@ footer a:hover {
   }
 
  
+
 
 
 
