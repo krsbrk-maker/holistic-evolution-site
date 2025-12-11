@@ -545,6 +545,67 @@ footer a:hover {
   }
 }
 
+/* ==========================
+   BOOK SESSION – HERO BANNER
+   ========================== */
+
+.book-hero {
+  position: relative;
+  min-height: 55vh;
+  background-image: url("../images/book-hero.jpg"); /* add this image to your images folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+}
+
+.book-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 156, 146, 0.6),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+.book-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.book-hero-heading {
+  font-size: clamp(2.3rem, 5vw, 3.1rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.book-hero-subheading {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 700px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .book-hero {
+    min-height: 45vh;
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+  .book-hero-content {
+    padding: 3rem 1.5rem;
+  }
+}
 
 
 @media (max-width: 767.98px) {
@@ -559,6 +620,7 @@ footer a:hover {
   }
 
  
+
 
 
 
