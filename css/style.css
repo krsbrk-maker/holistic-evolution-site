@@ -46,16 +46,10 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(224, 244, 242, 0.65); /* soft sea-green overlay */
+  background: rgba(255, 255, 255, 0.6);
   z-index: 1;
 }
-
-.about-hero-content {
-  position: relative;
-  z-index: 2;
-}
- 
-
+  
 .hero-heading {
   color: var(--light-text);
 }
@@ -628,6 +622,7 @@ footer a:hover {
   }
 
  
+
 
 
 
