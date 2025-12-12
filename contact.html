@@ -98,31 +98,37 @@
           <h4 class="mb-4">Send a Message</h4>
 
           <!-- You can connect this form to Formspree later -->
-           <form action="https://formspree.io/f/mnnegygv" method="POST">
-            <div class="mb-3">
-              <label class="form-label">Your Name</label>
-              <input type="text" class="form-control" placeholder="Enter your name">
-            </div>
+          <form action="https://formspree.io/f/mnnegygv" method="POST">
 
-            <div class="mb-3">
-              <label class="form-label">Your Email</label>
-              <input type="email" class="form-control" placeholder="Enter your email">
-            </div>
+  <div class="mb-3">
+    <label class="form-label">Your Name</label>
+    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+  </div>
 
-            <div class="mb-3">
-              <label class="form-label">Phone (optional)</label>
-              <input type="text" class="form-control" placeholder="Enter your phone number">
-            </div>
+  <div class="mb-3">
+    <label class="form-label">Your Email</label>
+    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+  </div>
 
-            <div class="mb-3">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" rows="5" placeholder="How can Marie assist you?"></textarea>
-            </div>
+  <div class="mb-3">
+    <label class="form-label">Phone (optional)</label>
+    <input type="text" name="phone" class="form-control" placeholder="Enter your phone number">
+  </div>
 
-            <button type="submit" class="btn btn-primary-soft btn-lg w-100">
-              Send Message
-            </button>
-          </form>
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-control" rows="5" placeholder="How can Marie assist you?" required></textarea>
+  </div>
+
+  <!-- Optional: helps label submissions in the inbox -->
+  <input type="hidden" name="_subject" value="New message from Holistic Evolution website">
+
+  <button type="submit" class="btn btn-primary-soft btn-lg w-100">
+    Send Message
+  </button>
+
+</form>
+
         </div>
       </div>
 
@@ -162,6 +168,7 @@
 
 </body>
 </html>
+
 
 
 
