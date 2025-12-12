@@ -64,12 +64,6 @@ body {
   color: var(--light-text);
 }
 
-.hero-carousel .carousel-item {
-  filter: brightness(1.15);
-}
-
-
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -633,6 +627,7 @@ footer a:hover {
   }
 
  
+
 
 
 
