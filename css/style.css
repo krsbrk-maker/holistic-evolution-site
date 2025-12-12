@@ -43,7 +43,7 @@ body {
 }
 
 .hero-overlay {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .hero-heading {
@@ -622,6 +622,7 @@ footer a:hover {
   }
 
  
+
 
 
 
