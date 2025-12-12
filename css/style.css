@@ -66,6 +66,7 @@ body {
 
 .hero-heading {
   font-size: clamp(2.4rem, 4vw, 3.2rem);
+  color: #607d7d;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -620,6 +621,7 @@ footer a:hover {
   }
 
  
+
 
 
 
