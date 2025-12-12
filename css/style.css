@@ -47,12 +47,11 @@ body {
 }
 
 .hero-heading {
-  color: #1f4f4b; /* dark sea green */
-  text-shadow: none; /* optional: remove glow if you want cleaner look */
+  color: var(--light-text);
 }
 
 .hero-subheading {
-  color: #2c6b66; /* slightly lighter sea green */
+  color: var(--light-text);
 }
 
 .hero-carousel .carousel-item {
@@ -623,6 +622,7 @@ footer a:hover {
   }
 
  
+
 
 
 
