@@ -19,23 +19,23 @@ body {
 
 /* Navbar */
 .navbar {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 
-.navbar-brand {
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.navbar .nav-link {
+  font-weight: 600;
+  color: #234041;
 }
 
-.navbar-brand img {
-  height: 52px;
+.navbar .nav-link:hover {
+  color: var(--primary-color);
 }
 
 /* Hero / Carousel */
+
+
+
+
 .hero-carousel .carousel-item {
   min-height: 80vh;
   color: var(--light-text);
@@ -49,20 +49,7 @@ body {
   background: rgba(255, 255, 255, 0.6);
   z-index: 1;
 }
-  
-.hero-heading {
-  color: var(--light-text);
-}
-
-.hero-subheading {
-  color: var(--light-text);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 6rem 1rem;
-}
+ 
 
 .hero-heading {
   font-size: clamp(2.4rem, 4vw, 3.2rem);
@@ -76,7 +63,23 @@ body {
   max-width: 640px;
    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
+/* Reusable hero text panel */
+.hero-content {
+  max-width: 820px;
+}
 
+.hero-content .col-lg-7 {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Darker, calmer text */
+.hero-heading { color: #1f4f4b; text-shadow: none; }
+.hero-subheading { color: #234041; text-shadow: none; }
 /* Background images for slides */
 .hero-slide-1 {
   background-image: url("../images/hero1.jpg");
@@ -299,13 +302,10 @@ footer a:hover {
 
 /* Mobile */
 @media (max-width: 767.98px) {
-  .about-hero {
-    min-height: 45vh;
+  .hero-carousel .carousel-item {
     background-attachment: scroll;
-    text-align: center;
   }
 }
-
 
 /* ==========================
    SERVICES PAGE – HERO BANNER
