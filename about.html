@@ -2,31 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About – Holistic Evolution</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-  <!-- HEADER -->
-  <section class="section section-light hero">
-    <div class="container text-center">
-      <h1 class="display-3">About Holistic Evolution</h1>
-      <p class="lead">A grounded, compassionate space for inner transformation.</p>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/holistic-evolution.png" alt="Holistic Evolution logo">
+      <span>Holistic Evolution</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNav" aria-controls="mainNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-primary-soft" href="book-session.html">Book a Session</a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- ABOUT JUDY -->
-  <section class="section section-light">
+<main>
+
+<!-- ABOUT HERO BANNER -->
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
     <div class="container">
-      <h2>Who I Am</h2>
-      <p>My name is <strong>Judy Hoffman</strong>, and I am a Certified Consulting Hypnotist dedicated to helping individuals reconnect with their inner wisdom, emotional clarity, and personal identity. My work is grounded in compassion, intuition, and a deep respect for each person’s lived experience.</p>
-      <p>I specialize in supporting individuals who are beginning again after major life changes, including those navigating life after heart valve replacement and long-term anticoagulation therapy. While my services are non-therapeutic and non-medical, I understand the emotional and spiritual impact of these journeys.</p>
+      <div class="about-hero-content">
+        <h1 class="about-hero-heading">About Holistic Evolution</h1>
+        <p class="about-hero-subheading">A grounded, compassionate space for inner 
+          transformation.</p>
+      </div>
     </div>
   </section>
+ 
+<section class="section section-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- portrait card -->
 
-  <!-- PHILOSOPHY -->
+ 
+
+      <!-- Portrait card that overlaps the hero image -->
+      <div class="about-portrait-card">
+        <div class="about-portrait-image-wrapper">
+          <!-- Replace with your actual portrait image file name -->
+          <img src="images/JudyMarieHoffman5.jpg" alt="Hypnotherapist - Judy Marie Hoffman">
+        </div>
+        <div class="about-portrait-body">
+          <!-- Replace with her actual name and credentials -->
+          <div class="about-name"><h3>Judy Hoffman</h3></div>
+          <div class="about-credentials">
+          • Integrative Practitioner<br> • Advanced Professional Hypnotherapist<br> • Transformational Life Coach
+          </div>
+          <div class="about-tagline">
+ 
+          </div>
+        </div>
+      </div>
+
+      <!-- Main About Copy -->
+      <div class="row justify-content-center">
+        <div class="col-lg-9 about-main-copy">
+          
+        <h2>Who I Am</h2>
+      <p>My name is <strong>Judy Hoffman</strong>, and I am a Certified Consulting 
+        Hypnotist dedicated to helping individuals reconnect with their inner wisdom, 
+        emotional clarity, and personal identity. My work is grounded in compassion, 
+        intuition, and a deep respect for each person’s lived experience.</p>
+      <p>I specialize in supporting individuals who are beginning again after major life changes, 
+        including those navigating life after heart valve replacement and long-term 
+        anticoagulation therapy. While my services are non-therapeutic and non-medical, 
+        I understand the emotional and spiritual impact of these journeys.</p>
+        </div>
+      </div>
+         <!-- PHILOSOPHY -->
   <section class="section section-light">
     <div class="container">
       <h2>My Approach</h2>
@@ -65,12 +137,44 @@
       <p>You are not here by accident. If you feel called to reconnect with yourself, to find clarity, or to begin again with intention, I welcome you to explore this work.</p>
       <a href="program.html" class="btn btn-primary">Explore the Program</a>
     </div>
+  </section> 
+
+          <div class="mt-4">
+            <a href="services.html" class="btn btn-primary-soft me-2 mb-2">
+              Explore Services
+            </a>
+            <a href="book-session.html" class="btn btn-outline-light-soft mb-2"
+               style="border-color: var(--primary-color); color: var(--primary-color);">
+              Book a Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="section section-light text-center">
-    <p>&copy; Holistic Evolution — HolisticEvolution.net</p>
-  </footer>
+</main>
 
+<!-- FOOTER -->
+<footer>
+  <div class="container text-center">
+    <p class="mb-1">&copy; <span id="year"></span> Holistic Evolution. All rights reserved.</p>
+    <p class="mb-0">
+      <a href="contact.html">Contact</a> &bull;
+      <a href="book-session.html">Book a Session</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Set current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
+
+
